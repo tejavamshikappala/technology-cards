@@ -12,74 +12,53 @@ body {
 
 /* Write CSS code here */
 
-.forList {
-  background-color: #ffffff;
-  list-style-type: none;
-  border-radius: 40px;
-  overflow: hidden;
-  margin: 40px;
-}
-.container {
+.cards-app-container {
   display: flex;
-  flex-direction: column;
-
-  padding: 40px;
-}
-.image_style {
-  align-self: flex-end;
-  height: 60px;
-  width: 60px;
-}
-.for_div_container {
+  align-items: center;
+  justify-content: center;
   background-color: #f4faff;
-  padding: 50px;
+  min-height: 100vh;
+}
+
+.cards-list-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.header_main {
-  color: #171f46;
-  font-weight: bold;
-  font-family: 'Roboto';
-  font-size: 46px;
-  align-self: center;
-  width: 40vw;
-  text-align: center;
-}
-.for-para {
-  color: #64748b;
-  font-family: 'Roboto';
-  text-align: center;
-  align-self: center;
-  font-size: 18px;
-  width: 40vw;
-}
-.header {
-  color: #171f46;
-  font-weight: bold;
-  font-family: 'Roboto';
-  font-size: 22px;
+  width: 80%;
+  margin-top: 48px;
 }
 
-.Para {
-  color: #64748b;
+@media screen and (min-width: 768px) {
+  .cards-list-container {
+    margin-top: 96px;
+  }
+}
+
+.heading {
+  text-align: center;
+  color: #171f46;
   font-family: 'Roboto';
+  font-size: 48px;
   font-weight: bold;
 }
-.forSide {
-  width: 40vw;
-  align-self: flex-start;
+
+.description {
+  text-align: center;
+  color: #64748b;
+  font-family: 'Roboto';
+  font-size: 18px;
+  margin-top: 24px;
+  max-width: 625px;
 }
-@media screen and (min-width: 992px) {
-  .forSide {
-    width: 25vw;
-  }
-  .header_main {
-    width: 60vw;
-  }
-  .for-para {
-    width: 60vw;
-    font-size: 26px;
-  }
+
+.cards-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 32px;
+  max-width: 1100px;
+  padding-left: 0px;
 }

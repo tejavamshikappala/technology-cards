@@ -1,6 +1,5 @@
 import './App.css'
-import './components/CardItem/index.css'
-import Welcome from './components/CardItem/index'
+import CardItem from './components/CardItem/index'
 
 const cardsList = [
   {
@@ -38,18 +37,20 @@ const cardsList = [
 ]
 
 const App = () => (
-  <div className="for_div_container">
-    <h1 className="header_main">Learn 4.0 Technologies</h1>
-    <p className="for-para">
-      Get trained by alumni of IITs and top companies like Amazon, Microsoft,
-      Intel, Nvidia, Qualcomm, etc. Learn directly from professionals invovled
-      in Product Development.
-    </p>
-    <ul className="forUl">
-      {cardsList.map(eachItem => (
-        <Welcome each={eachItem} key={eachItem.id} />
-      ))}
-    </ul>
+  <div className="cards-app-container">
+    <div className="cards-list-container">
+      <h1 className="heading">Learn 4.0 Technologies</h1>
+      <p className="description">
+        Get trained by alumni of IITs and top companies like Amazon, Microsoft,
+        Intel, Nvidia, Qualcomm, etc. Learn directly from professionals involved
+        in Product Development.
+      </p>
+      <ul className="cards-list">
+        {cardsList.map(eachCard => (
+          <CardItem cardDetails={eachCard} key={eachCard.id} />
+        ))}
+      </ul>
+    </div>
   </div>
 )
 
