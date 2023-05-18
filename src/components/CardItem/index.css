@@ -27,6 +27,7 @@
   margin-bottom: 48px;
   max-width: 323px;
   list-style-type: none;
+  box-shadow: 3px 5px 5px rgb(32, 31, 31);
 }
 
 .card-title {
